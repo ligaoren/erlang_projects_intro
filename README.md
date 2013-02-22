@@ -10,6 +10,7 @@ BossDB
 
 Supported databases
 
+
 * Mnesia
 * MongoDB
 * MySQL
@@ -102,6 +103,42 @@ Erlang version of memcached with data persistence.
 > Cacherl is an Erlang port of famous Memcached trying to take advantage of both Erlang and Memcached. It follows the simple interface of memcached with additional data persistence. All memcached clients (C/PHP/Perl/...) can access Cacherl without any code modification. Moreover, the distributing of cached data is ensured by Erlang instead of memcached client hashing, so we don't need to worry about data invalidation when adding more servers.
 
 svn checkout http://cacherl.googlecode.com/svn/trunk/ cacherl-read-only
+
+
+Gencron 
+======
+Periodic command execution in Erlang
+
+gencron provides the gen_cron server for periodic command execution. gen_cron is a very thin extension over gen_server, but it was a common pattern in our code worth abstracting (non-overlapping periodic execution with a force-now feature); perhaps you will find the same. Note this is a library for Erlang development, not a replacement of the OS utility cron. genexpire is an example using gencron. It periodically enforces a (per-node) size limit on Mnesia databases. Another Dukes of Erl release.
+
+
+
+Home : [http://code.google.com/p/gencron](http://code.google.com/p/gencron) 
+			
+			
+				
+
+	
+Empierl 
+=====
+ MMO strategy game engine
+
+We are creating an open source engine for web based MMO strategy games such as Travian, with Erlang and other languages.
+
+Home : [http://code.google.com/p/empierl ](http://code.google.com/p/empierl )
+
+
+
+
+Erl-string-lambda
+==================
+ Impelmentation of String Lambda in Erlang
+
+Implementation of String Lambda in Erlang based on Oliver Steele's Functional Javascript.
+
+
+Website Link : http://code.google.com/p/erl-string-lambda 
+
 
 
 
